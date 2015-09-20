@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-2.0.3.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<title>Welcome to the John`s Secrecy</title>
+</head>
+<body>
+<div id="header">Memory Allocation and Garbage Collection, Bahadir Can Yildiz - 100301034</div>
+<div id="regcount" class="quote">
+<p>Process Quantity:</p>
+<input id="processtotal" type="number" name="points" class="bar"/><br/>
+<p>Total Memory:</p>
+<input type="number" id="totalmem" class="bar"/><br/><br/>
+<center><input type="button" value="Memory Allocation" onclick="return olustur();"/></center>
+</div>
+<div id="guide" class="quote">
+<p>Total Cpu Time:<span id="cputime">0</span> ms</p>
+</div>
+<div id="malloc" class="quote">
+<p>Memory Allocation Logs:</p>
+<p>Allocated Memory Space:<span id="ams">0</span> kb</p>
+<p>Free Memory Space:<span id="fms"></span> kb</p>
+</div>
+<div id="gclog" class="quote">
+<p>Garbage Collection Logs:</p>
+</div>
+<div id="processes" class="quote">
+<p>All Processes:</p>
+<div id='memory'>
+</div>
+<center><input type='button' onclick='return calistir();' value='Stepper'></input></center>
+</div>
+</body>
+</html>
